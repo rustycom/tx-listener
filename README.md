@@ -1,4 +1,4 @@
-# Solana Transaction Listner - Network Layer
+# Solana Transaction Listener - Network Layer
 
 This is a rust implementation for listening to Solana transactions on the network layer. It uses the port level upd protocol to listen to the transactions on port 8001. The transaction listener listens to the transactions and prints the transaction details to the terminal as well as in a debug.log file.
 
