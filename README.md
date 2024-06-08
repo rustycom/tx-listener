@@ -1,6 +1,6 @@
 # Solana Transaction Listener - Network Layer
 
-This is a rust implementation for listening to Solana transactions on the network layer. It uses the port level upd protocol to listen to the transactions on port 8001. The transaction listener listens to the transactions and prints the transaction details to the terminal as well as in a debug.log file.
+This is a rust implementation for listening to Solana transactions on the network layer. It uses the port level UDP protocol to listen to the transactions on port 8001. The transaction listener listens to the transactions and prints the transaction details to the terminal as well as in a debug.log file.
 
 ## Installation
 
@@ -53,7 +53,7 @@ To run the rust code directly, you can run the following command:
 sudo cargo run -- -i <interface>
 ```
 
-Replace `<interface>` with the network interface you want to listen to. We need sudo permissions to listen to the network traffic as network interface if often a privileged operation.
+Replace `<interface>` with the network interface you want to listen to. We need sudo permissions to listen to the network traffic as network interface is often a privileged operation.
 
 While running the transaction listener, you can see the transaction details in the terminal as well as in the debug.log (+WARN and INFO) file.
 
@@ -65,7 +65,7 @@ To test the transaction listener, you can run the following command:
 sudo cargo test -- --nocapture
 ```
 
-There are currently two unit tests in the test suite. The first test checks if the transaction listener can listen to the network traffic using a preexisting pcap file. The second test checks if the transaction listener can listen to the network traffic using a custom made udp packet.
+There are currently two unit tests in the test suite. The first test checks if the transaction listener can listen to the network traffic using a preexisting pcap file. The second test checks if the transaction listener can listen to the network traffic using a custom-made UDP packet.
 
 ## Sample Output
 
